@@ -1,0 +1,35 @@
+$button-default-size: 170px;
+$button-hover-size: 200px;
+
+* {
+    padding:0;
+    margin:0;
+  }
+  
+  body {
+    font-family: 'Rubik', sans-serif;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #CCD1D9;
+  }
+
+button {
+    border-radius: 40px;
+    padding: 16px 42px;
+    font-size: 20px;
+    background-color: darken(#FC6E51,7%);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    width: $button-default-size;
+    height: 60px;
+
+    &:hover {
+        width: $button-hover-size;
+        height: 80px;
+    }
+}
